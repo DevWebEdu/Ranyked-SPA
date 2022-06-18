@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+.card-me{
+    display:flex;
+    border: 1px solid rgba(184, 96, 52,0.858);
+    border-radius: 10px;
+    
+}
+
+.card-me > *{
+    margin-right: 0.5rem;
+    
+   
+}
+.card-me__contain-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+}
+
+.card-me__contain-img img{
+    width: 70px;
+    height: 70px;
+    border-radius:50% ;
+    margin: auto;
+    flex:1;
+    
+}
+.card-me___contain-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+    flex:2;
+}
+
+
+.card-me___contain-text h5{
+    font-size: 18px;
+}
+.card-me___contain-text small{
+    font-size: 12px;
+    color: gray;
+}
+
+.card-me___contain-text__contain-ocupacion {
+    display:flex;
+}
+
+.card-me__contain-button{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0 0.5rem 0 0;
+    flex:1.5;
+}
+
+
+.card-me__contain-button a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding:0;
+    width: 100%;
+    outline:none;
+    border-radius:5px;
+    padding: 0 0.5rem;
+    border:1px solid rgba(184, 96, 52,0.858) ;
+    color:rgba(184, 96, 52,0.858)
+}
+
+.card-me__contain-button button{
+    font-size: 16px;
+    padding:0;
+    width: 100%;
+    outline:none;
+    border-radius:5px;
+    padding: 0 0.5rem;
+    border:1px solid rgba(184, 96, 52,0.858) ;
+    color:rgba(184, 96, 52,0.858)
+}
+
+
+
+.card-me__contain-button  button:hover,
+.card-me__contain-button a:hover{
+   background-color: rgba(184, 96, 52,0.858);
+   color: white;
+   border:none
+}
