@@ -3,6 +3,7 @@
 }
 .card-me{
     display:flex;
+    
     border: 1px solid rgba(184, 96, 52,0.858);
     border-radius: 10px;
     
@@ -62,7 +63,7 @@
 .card-me__contain-button a{
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     padding:0;
     width: 100%;
     outline:none;
@@ -73,7 +74,7 @@
 }
 
 .card-me__contain-button button{
-    font-size: 16px;
+    font-size: 14px;
     padding:0;
     width: 100%;
     outline:none;

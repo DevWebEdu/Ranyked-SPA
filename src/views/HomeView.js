@@ -56,7 +56,7 @@ export default function HomeView() {
         
         
         <div className='col-12 col-lg-6 my-3' style={{display:"flex" , alignItems:"center"}}>
-           <Typography variant="h1" sx={{width:"100%",fontWeight:"bolder", fontSize:{md:"48px",lg:"64px",sm:"40px",xs:"36px"},textAlign:"center"}}>Bienvenido  {user.displayName}</Typography>
+           <Typography variant="h1" sx={{width:"100%",fontWeight:"bolder", fontSize:{md:"48px",lg:"64px",sm:"40px",xs:"36px"},textAlign:"center"}}>Bienvenido  Unnamed </Typography>
         </div>
         <div className='col-12 col-lg-6 my-3' >
            <Watch/>
@@ -76,7 +76,7 @@ export default function HomeView() {
       <div className="card col-lg-4 mt-4  text-center ">
         <h5 className="card-header text-white bg-black ">Productos</h5>
         <div className="card-body">
-          
+           
           <p className="card-text">Por el momento se encuentran {products.length} productos</p>
           <Link to="/productos" className="btn btn-dark">Dasboard</Link>
         </div>

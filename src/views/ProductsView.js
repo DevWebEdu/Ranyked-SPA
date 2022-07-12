@@ -4,7 +4,7 @@ import { obtenerProductos } from '../services/productsService'
 import { Link } from 'react-router-dom'
 import { Fab } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
-
+import BackspaceIcon from '@mui/icons-material/Backspace';
 
 export default function ProductsView() {
   const [productos,setProducts] = useState([])
@@ -13,7 +13,6 @@ export default function ProductsView() {
   const getProducts = async() =>{
     try {
       const productsObtenidos = await obtenerProductos()
-      console.log(productsObtenidos)
       setProducts(productsObtenidos)
     } catch (error) {
       throw error
@@ -45,9 +44,12 @@ export default function ProductsView() {
                   <Link to={`/producto/${id}`} className="btn btn-outline-light position-absolute bottom-0 end-0 m-2">
                           Detalles
                   </Link >
+                 
+                    
+                  
               </div>
 
-
+              <BackspaceIcon style={{color:'rgba(184, 96, 52,0.858)', position:'absolute' ,top:'0' , right:'0', marginTop:'1%' ,marginRight:'5%',cursor:'pointer'}} onClick={e=>{alert("hola")}}/>  
             </div>
         ))}
         

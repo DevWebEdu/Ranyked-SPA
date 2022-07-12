@@ -51,17 +51,16 @@ export default function ClientsView() {
   return (
     <>
         <p className="h1 text-center mt-4">Clientes</p>
-        <div className="row">  
-                <TextField id="outlined-basic" label="Buscar" variant="outlined"  />
-        </div>
-        <div className="row justify-content-center  ">
+   
+        <div className="row justify-content-center  mt-2 ">
             {clientes.map(({id,
                             dni_client,
                             nom_client,             
                             ape_client,                        
                             foto_client,
-                            ocupacion_client},i)=>(
-                              <div className="card-me py-1 mt-3   col-lg-3 col-md-6 col-sm-6 col-12 " key={i}>
+                            ocupacion_client},
+                            i)=>(
+                              <div className="card-me py-1 mt-3   col-lg-3 col-md-6 col-sm-4 col-12 " key={i}>
             <div className='card-me__contain-img'>
               <img src={foto_client} alt={nom_client}/>
             </div>

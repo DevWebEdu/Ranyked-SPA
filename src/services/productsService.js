@@ -39,4 +39,39 @@ const obtenerUnProducto= async (idProducto) => {
     }
 }
 
-export {obtenerProductos,crearProducto,obtenerUnProducto}
+
+
+const editarProducto = async ( idProducto,productoAEditar)=>{
+    try{
+        const headers = {
+            "Content-Type" :"application/json"
+        }
+        const endPoint = `${URL}/productos/${idProducto}`
+        const {data,status} = await axios.put(endPoint,productoAEditar,{headers})
+        if(status===200){
+            return data
+        }else{
+            throw Error("erro")
+        }
+
+    } catch(error){
+        console.log(error)
+    }
+}
+
+const eliminarProducto  = async (idProducto) =>{
+    try {
+        const endPoint= `${URL}/productos/${idProducto}`
+        const {status} = await axios.delete(endPoint)
+        if(status===200){
+            return "ok"
+        }else{
+            return Error("ocurrio un error")
+        }
+    } catch (error) {
+        return error
+    }
+}
+
+
+export {obtenerProductos,crearProducto,obtenerUnProducto,editarProducto,eliminarProducto}

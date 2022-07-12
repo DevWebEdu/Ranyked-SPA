@@ -15,7 +15,7 @@ export default function AgregarProductoView() {
     const [producto,setProducto]= useState({
         nom_prod:"",
         autor_prod:"",
-        tipo_prod:"tipoProductos",
+        tipo_prod:"",
         precio_prod:"",
         cant_prod:"",
         desc_prod:"",
